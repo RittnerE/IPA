@@ -1,0 +1,164 @@
+.header{
+    font-size: 45px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 25px;
+    background-color: #056d85;
+    margin: 0px;
+    border-radius: 15px;
+}
+body{
+    background: cadetblue;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+body div li.überschrift{
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+html body footer{
+    float: right;
+
+
+}
+html body{
+    padding-left: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.middle{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+
+}
+
+.menu{
+    width: 180%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item{
+    border-top: 1px solid #033442;
+    overflow: hidden;
+}
+
+.btn{
+    display: block;
+    padding: 16px 20px;
+    background: #056d85;
+    color: white;
+    position: relative;
+
+}
+
+.btn:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #056d85;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i{
+    margin-right: 10px;
+}
+
+.smenu{
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a{
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    font-size: 22px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #04576a;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before{
+    opacity: 1;
+}
+.item:target .smenu{
+    max-height: 10em;
+}
+
+#size{
+    height: 500px;
+    width: 10%;
+    max-width: 200px;
+}
+#startseiteIcon{
+    height: 65px;
+    width: 40px;
+    background-color: #056d85;
+    border-radius: 0%;
+}
+.row {
+    flex: 1 1 0px;
+}
+#line{
+    display: flex;
+    flex-direction: row;
+}
+#icon{
+    height: 50px;
+    width: 50px;
+    background-color: #033442;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 15%;
+    border: 10px solid #033442;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: none;
+}
+#icon::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    margin-left: 3.5%;
+    position: absolute;
+}
+#icon::after{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 60%;
+    margin-left: 7%;
+}
